@@ -4,7 +4,7 @@ var infoWindow;
 var pinColor;
 var pinImage;
 var pinShadow;
-var error = false; // this is more like a switch to indicate if there has been an error in returning the wiki content
+var error; // this is more like a switch to indicate if there has been an error in returning the wiki content
 var wikiAPI = 'https://en.wikipedia.org/w/api.php?action=opensearch&search='; //part of the wiki api token
 //ref: https://codepen.io/saksham_zz/pen/oeYrbm
 //styles for the google map
@@ -208,7 +208,7 @@ var companies = [{
 //Started implementing my code from this video : https://www.youtube.com/watch?v=Zxf1mnP5zcw
 // and then changed/implemented extra functionality as needed
 function initMap() {
-
+  error=false; //initilaize error to false
 	//setting attributes for our markers and map
 	pinColor = "191970";
 	pinImage = new google.maps.MarkerImage("http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|" + pinColor, //ref: https://stackoverflow.com/questions/2472957/how-can-i-change-the-color-of-a-google-maps-marker
@@ -227,7 +227,7 @@ function initMap() {
 		},
 		styles: styles
 
-	}
+	};
 
 	// constructing the map
 	map = new google.maps.Map(document.getElementById('map'), options);
@@ -282,7 +282,7 @@ function initMap() {
 		if (props.content && !error) {
 
 
-			companies[i].marker = marker
+			companies[i].marker = marker;
 			marker.addListener("click", wrapContent(marker), false); // used other listener from above because they produce problems otherwise
 
 
@@ -389,7 +389,7 @@ function loadWikiContent(marker, infoWindow) {
 		})
 		.done(function () {
 			console.log("success");
-			error: false;
+			error= false;
 		})
 		.fail(function () {
 			//this is for debugging only
