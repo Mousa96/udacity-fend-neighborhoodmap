@@ -1,0 +1,52 @@
+/* ref: https://www.w3schools.com/css/css3_box-sizing.asp */
+ * {
+     box-sizing : border-box;
+}
+ html,body {
+     height:100%;
+     width:100%;
+     display: flex;
+}
+ #map {
+     float: right;
+     width: 70%;
+     height: 100%;
+     overflow: hidden;
+     position: relative;
+}
+ .view {
+     display: inline-block;
+     width: 25%;
+     overflow: hidden;
+     min-height: 270px;
+}
+ .myContainer {
+     text-align: center;
+     width: 100%;
+     display: inline-block;
+}
+ .searchField{
+     margin-bottom: 5px;
+     display: inline-block;
+}
+ .listContent {
+     padding: 10px;
+     margin-bottom: 5px;
+     background-color: #000000;
+     color: #ffffff;
+}
+ .listContent:hover {
+     background-color: #0000ff;
+}
+ @media (max-width: 650px) {
+     #map {
+         float: right;
+         width: 100%;
+         height: 37%;
+    }
+     .view {
+         float: bottom;
+         width: 100%;
+         height: 63%;
+    }
+}
