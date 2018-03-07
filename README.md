@@ -24,3 +24,5 @@ those all were helpful in finishing this project (these are just in general for 
 15. Knockout.js
 16. bootstrap
 17. Wikipedia API
+## Note about the application:
+You may notice it's kinda slow and laggy a bit when clicking the markers, but that just because of all the debugging functions during production phase to take care of responsive design & error-handling. If you want to achieve a decent speed. comment out every debugging function ( they're indicated in the comments ). 
