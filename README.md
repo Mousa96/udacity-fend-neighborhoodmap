@@ -5,7 +5,8 @@ You will develop a single-page application featuring a map of your neighborhood 
 1. clone the repo
 2. open the zipped folder and search for index.html
 3. open idnex.html in your favorite web browser
-# Tools/Resources/Documentation that were helpful in finishing this project (these are just in general for anyone who is searching for a reference in the future, all code that was taken has been attributed in the comments):
+# Tools/Resources/Documentation:
+those all were helpful in finishing this project (these are just in general for anyone who is searching for a reference in the future, all code that was taken has been attributed in the comments):
 1. [Link] (https://www.youtube.com/watch?v=Zxf1mnP5zcw)
 2. [Link] (https://developers.google.com/maps/documentation/javascript/events)
 3. [Link] (https://stackoverflow.com/questions/13807137/get-first-paragraph-and-only-text-of-a-wikipedia-article-returns-not-desired-r)
