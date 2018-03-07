@@ -5,6 +5,8 @@ You will develop a single-page application featuring a map of your neighborhood 
 1. clone the repo
 2. open the zipped folder and search for index.html
 3. open idnex.html in your favorite web browser
+or:
+*Go to this live link: https://github.com/Mousa96/udacity-fend-neighborhoodmap/blob/master/index.html
 # Tools/Resources/Documentation:
 those all were helpful in finishing this project (these are just in general for anyone who is searching for a reference in the future, all code that was taken has been attributed in the comments):
 1. [Link] (https://www.youtube.com/watch?v=Zxf1mnP5zcw)
